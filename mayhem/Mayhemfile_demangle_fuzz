@@ -1,0 +1,9 @@
+project: savantenvs/gccrs
+target: gccrs-libiberty-demangle
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gccrs-libiberty-demangle/testsuite
+cmds:
+  - cmd: /mayhem/demangle_fuzz
+    libfuzzer: true
+    timeout: 5

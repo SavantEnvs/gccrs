@@ -1,0 +1,9 @@
+project: savantenvs/gccrs
+target: gccrs-libiberty-simple-object
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gccrs-libiberty-simple-object/testsuite
+cmds:
+  - cmd: /mayhem/simple_object_fuzz
+    libfuzzer: true
+    timeout: 5

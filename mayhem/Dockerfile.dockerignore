@@ -1,0 +1,2 @@
+# Build context for mayhem/Dockerfile: the FULL repo incl. .git, minus build.sh output.
+mayhem/out/

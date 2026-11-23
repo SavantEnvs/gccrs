@@ -1,0 +1,1 @@
+<a href="x">&amp;&lt;&#39;&eacute;</a>
